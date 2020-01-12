@@ -28,7 +28,7 @@ namespace protected_test
 
             var t = new What1();
             var temp = new What2();
-            var ss = temp.MyProperty;
+
         }
 
 
