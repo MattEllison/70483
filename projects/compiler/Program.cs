@@ -17,6 +17,7 @@ namespace compiler
         static void Test()
         {
             Console.WriteLine("Test22");
+
         }
     }
 }
