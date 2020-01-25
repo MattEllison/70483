@@ -27,6 +27,8 @@ namespace delegates
 
             MattsFunc<int, string> temp2 = (int mess) => mess.ToString();
             Console.WriteLine(temp2(2));
+
+
         }
 
         static void Test1()
