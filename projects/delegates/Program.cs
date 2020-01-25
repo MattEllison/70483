@@ -18,8 +18,21 @@ namespace delegates
         }
 
         private delegate T2 MattsFunc<T1, T2>(T1 message);
+        private delegate void MattsAction();
         static void RecreateFunc()
         {
+
+            MattsAction tempAction = delegate
+                                    {
+                                        Console.WriteLine("what");
+                                    };
+            MattsAction tempAction2 = () =>
+            {
+                Console.WriteLine("what");
+            };
+            MattsAction tempAction3 = () => Console.WriteLine("what");
+
+            MattsAction tempAction4 = new MattsAction(() => Console.WriteLine(""));
 
 
             Func<int, string> temp = (int mess) => mess.ToString();

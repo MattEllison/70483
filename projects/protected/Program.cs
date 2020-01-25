@@ -38,7 +38,7 @@ namespace protected_test
     {
         static void TestMethod()
         {
-            var temp = new What();
+            //var temp = new What();
         }
     }
 
