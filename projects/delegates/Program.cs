@@ -1,8 +1,9 @@
-﻿using System;
-
+﻿using System.Collections;
+using System;
+using System.Collections.Generic;
 namespace delegates
 {
-    class Program
+    public class Program
     {
         private delegate string Test();
         private delegate string Test2(string message);
@@ -13,10 +14,46 @@ namespace delegates
         static void Main(string[] args)
         {
 
-            RecreateFunc();
+            var list = new List<Func<int>>();
+            for (int i = 0; i < 10; i++)
+            {
+                int a = i;
+                list.Add(() => a);
+            }
+            foreach (var item in list)
+            {
+                Console.WriteLine(item());
+            }
+
+
+            //Events();
+            //            RecreateFunc();
 
         }
 
+        public delegate void MattsEventHanlder(object obj, EventArgs args);
+        public event MattsEventHanlder What;
+        public event EventHandler<Program> test;
+
+
+
+        static void Events()
+        {
+            var temp = new Program();
+            temp.What = (object ob, EventArgs evg) =>
+            {
+                Console.WriteLine("what22");
+            };
+
+            temp.What(null, EventArgs.Empty);
+
+
+            temp.test = (object obj, Program p) =>
+            {
+
+
+            };
+        }
         private delegate T2 MattsFunc<T1, T2>(T1 message);
         private delegate void MattsAction();
         static void RecreateFunc()
