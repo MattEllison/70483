@@ -1,11 +1,14 @@
 {
   "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "projects/delegates"
-	}
-],
+    {
+      "path": "."
+    },
+    {
+      "path": "projects/delegates"
+    },
+    {
+      "path": "projects/exceptions"
+    }
+  ],
   "settings": {}
 }
