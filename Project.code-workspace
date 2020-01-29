@@ -11,6 +11,9 @@
     },
     {
       "path": "projects/compiler"
+    },
+    {
+      "path": "projects/lazy"
     }
   ],
   "settings": {}
