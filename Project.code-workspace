@@ -8,6 +8,9 @@
     },
     {
       "path": "projects/exceptions"
+    },
+    {
+      "path": "projects/compiler"
     }
   ],
   "settings": {}
