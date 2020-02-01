@@ -17,6 +17,9 @@
     },
     {
       "path": "projects/extensions"
+    },
+    {
+      "path": "projects/partial"
     }
   ],
   "settings": {}
