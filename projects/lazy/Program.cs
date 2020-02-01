@@ -27,10 +27,11 @@ namespace lazy
 
 
             Console.WriteLine(temp.Value.MyProperty);
+            Console.WriteLine(temp.Value.MyProperty);
 
-            Func<Test> temp2 = () => new Test("dsfdfd");
+            //Func<Test> temp2 = () => new Test("dsfdfd");
 
-            Console.WriteLine(temp2().MyProperty);
+            //Console.WriteLine(temp2().MyProperty);
         }
     }
 }
