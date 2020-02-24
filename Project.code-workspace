@@ -27,9 +27,6 @@
     {
       "path": "projects/reflection"
     },
-    {
-      "path": "projects/threadsafe"
-    }
   ],
   "settings": {}
 }
