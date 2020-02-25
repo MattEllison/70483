@@ -22,5 +22,20 @@ namespace threadsafe
             }
 
         }
+        private static int counter = 0;
+        public static void Run2()
+        {
+            Interlocked.Add(ref counter, 1);
+        }
+
+        private static int counter3 = 0;
+        public static void Run3()
+        {
+            lock (tmp)
+            {
+                counter3++;
+            }
+
+        }
     }
 }
