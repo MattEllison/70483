@@ -4,7 +4,13 @@ using whatwhat;
 
 namespace whatwhat
 {
+    class TryToNewMeup
+    {
+        protected internal TryToNewMeup()
+        {
 
+        }
+    }
     class What2 : What1
     {
         protected override int MyProperty { get; set; }
@@ -25,7 +31,7 @@ namespace protected_test
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
+            var tem2p = new TryToNewMeup();
             var t = new What1();
             var temp = new What2();
 
